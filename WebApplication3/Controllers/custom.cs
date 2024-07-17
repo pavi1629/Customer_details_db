@@ -17,8 +17,6 @@ namespace WebApplication3.Controllers
         {
             using (var entity = new CustomerContext()) 
             {
-
-
                 Table_1 cus = new Table_1();
              
                 cus.Customer_Name = data.CustomerName;
@@ -26,7 +24,6 @@ namespace WebApplication3.Controllers
 
                 entity.Table_1.Add(cus);
                 entity.SaveChanges();
-
             }
             return View();
         }
